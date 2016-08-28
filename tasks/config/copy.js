@@ -50,11 +50,11 @@ module.exports = function(grunt) {
 			filter: 'isFile'
 		},
 
-		api: {
+		example_api: {
 			expand: true,
 			src: ['**/**.json'],
 			dest: '.tmp/public/',
-			cwd: 'app/api/',
+			cwd: 'app/example_api/',
 			flatten: false,
 			filter: 'isFile'
 		},

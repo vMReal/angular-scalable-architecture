@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="app" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="app" class="no-js"> <!--<![endif]-->
+<head ng-controler="layout.headCtrl">
+  <meta charset="utf-8"/>
+  <title>{{ SYSTEM_NAME }}</title>
+  <meta name="description" content="{{ SYSTEM_DESCRIPTION }}"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+  <link rel="stylesheet" href="/styles/lib.css" type="text/css"/>
+  <link rel="stylesheet" href="/styles/app.css" type="text/css"/>
+</head>
+<body>
+<header>
+  <h1>{{ SYSTEM_NAME }}</h1>
+  <h2>{{ SYSTEM_VERSION }}</h2>
+  <p>{{ SYSTEM_DESCRIPTION }}</p>
+</header>
+
+<ng-view></ng-view>
+
+<script src="/js/lib.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/system_const.js"></script>
+</body>
+</html>
