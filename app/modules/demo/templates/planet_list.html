@@ -1,0 +1,28 @@
+<div class="demo" role="main">
+
+	<div class="row">
+		<div class="col-lg-12">
+
+			<planet ng-repeat="planet in ctrl.planets"
+					ng-click="( ctrl.isSelectedItem(planet.id) )? ctrl.deselectItem(planet.id): ctrl.selectItem(planet.id)"
+					mark="ctrl.isSelectedItem(planet.id)"></planet>
+		</div>
+	</div>
+
+	<div class="col-lg-12">
+	</div>
+
+
+	<div class="row">
+
+		<div class="col-lg-12">
+			<planet ng-repeat="planet in ctrl.planets | objectsFilterByProperty:'id':ctrl.getSelectedItems()"
+					 name="{{ planet.name }}">
+			</planet>
+		</div>
+
+
+		<div class="col-lg-12">
+		</div>
+	</div>
+</div>
