@@ -1,0 +1,28 @@
+ [
+   {
+    "id": 1,
+    "name": "Earth",
+    "number": 3,
+      "surface_area_km": 510072000,
+      "nitrogen_pc": 78.08,
+      "oxygen_pc": 20.95
+  },
+
+   {
+     "id": 2,
+     "name": "Mars",
+     "number": 4,
+     "surface_area_km": 144371391,
+     "nitrogen_pc": 2.7,
+     "oxygen_pc": 0.13
+   },
+
+   {
+     "id": 3,
+     "name": "Mercury",
+     "number": 1,
+     "surface_area_km": 0,
+     "nitrogen_pc": 0,
+     "oxygen_pc": 42.0
+   }
+ ]
